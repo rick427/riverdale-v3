@@ -1,0 +1,12 @@
+@import "@/styles/variables.scss";
+
+.hero{
+    height: 60vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1.5rem;
+    color: $color-white;
+    background: linear-gradient(rgba(0,0,0,0.45), rgba(0,0,0,0.5)), url("@/assets/about-bg.webp") no-repeat center center / cover;
+}

@@ -1,0 +1,36 @@
+@import "@/styles/variables.scss";
+
+.hero{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+
+    &__stack{
+        width: min(40rem, 100%);
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        gap: 2rem;
+
+        @media screen and (max-width: $media-sm){
+            padding: 2rem;
+            gap: 1rem;
+            width: min(35rem, 100%);
+
+            > h1{
+                font-size: 3rem;
+            }
+        }
+
+        
+        @media screen and (max-width: $media-xs){
+            text-align: left;
+            align-items: flex-start;
+        }
+    }
+}

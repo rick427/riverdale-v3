@@ -1,0 +1,52 @@
+.places{
+    padding: 4rem 6rem;
+    display: flex;
+    flex-direction: column;
+    gap: 4rem;
+    background: url("@/assets/bg-left.svg") no-repeat top left;
+
+    &__header{
+        width: min(35rem, 100%);
+        margin: 0 auto;
+    }
+
+    &__card{
+        position: relative;
+        height: 25rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: #fff;
+        border-radius: 0.5rem;
+        overflow: hidden;
+        cursor: pointer;
+
+        &:hover{
+            img{
+                transform: scale(1.1) rotate(2deg);
+            }
+        }
+
+        img{
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            z-index: -2;
+            transition: all 0.5s ease;
+        }
+
+        &:before{
+            position: absolute;
+            content: "";
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0,0,0,0.25);
+            z-index: -1;
+        }
+    }
+}

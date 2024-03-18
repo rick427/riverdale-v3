@@ -1,0 +1,17 @@
+@import "@/styles/variables.scss";
+
+.founders{
+    padding: 6rem;
+    position: relative;
+    min-height: 80vh;
+
+    &:before{
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 75%;
+        height: 100%;
+        background-color: $color-primary-light;
+    }
+}

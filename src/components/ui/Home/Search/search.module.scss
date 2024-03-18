@@ -1,0 +1,45 @@
+@import "@/styles/variables.scss";
+
+.search{
+    padding: 4rem 6rem;
+    display: flex;
+    flex-direction: column;
+    gap: 4rem;
+
+    &__header{
+        width: min(35rem, 100%);
+        margin: 0 auto;
+    }
+
+    &__box{
+        display: flex;
+        flex-direction: column;
+        gap: 1.5rem;
+        padding: 2rem;
+        border-radius: 0.3rem;
+        background-color: rgba(177, 157, 118, 0.05);
+
+        &__input{
+            padding: 1rem 0.5rem;
+            height: 3rem;
+        }
+
+        &__btn{
+            font-size: 0.85rem;
+            font-weight: 500;
+            text-transform: uppercase;
+            background-color: $color-primary;
+            border: 1px solid transparent;
+            border-radius: 0.3rem;
+            color: #fff;
+            cursor: pointer;
+            transition: all 200ms ease;
+
+            &:hover{
+                background-color: $color-primary-dark;
+                color: $color-white;
+                border: 1px solid $color-primary;
+            }
+        }
+    }
+}
