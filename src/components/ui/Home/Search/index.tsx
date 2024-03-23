@@ -19,14 +19,17 @@ export default function Search() {
             <Box className={styles.search__box}>
                 <Grid columns={{initial: "3"}} gap="5">
                     <TextFieldInput 
-                        placeholder="Enter an address, state, city or area" 
+                        color="bronze"
+                        placeholder="Enter a state, city or area" 
                         className={styles.search__box__input}
                     />
                     <TextFieldInput 
+                        color="bronze"
                         placeholder="Categories" 
                         className={styles.search__box__input}
                     />
                     <TextFieldInput 
+                        color="bronze"
                         placeholder="Property Status" 
                         className={styles.search__box__input}
                     />
@@ -34,14 +37,17 @@ export default function Search() {
 
                 <Grid columns={{initial: "4"}} gap="5">
                     <TextFieldInput 
+                        color="bronze"
                         placeholder="Beds | Baths" 
                         className={styles.search__box__input}
                     />
                     <TextFieldInput 
+                        color="bronze"
                         placeholder="MLS #" 
                         className={styles.search__box__input}
                     />
                     <TextFieldInput 
+                        color="bronze"  
                         placeholder="Price" 
                         className={styles.search__box__input}
                     />

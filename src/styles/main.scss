@@ -22,3 +22,13 @@ ul{
     color: #fff;
     background: linear-gradient(to top, rgba(0, 0, 0, 0.35), rgba(0, 0, 0, 0.75));
 }
+
+/* the slides */
+.slick-slide > div {
+    margin: 0 0.3rem;
+}
+
+/* the parent */
+.slick-list {
+    margin: 0 -0.3rem;
+}

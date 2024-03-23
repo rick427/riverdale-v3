@@ -1,10 +1,19 @@
+@import "@/styles/variables.scss";
+
 .footer{
-    background-color: #2c2c2c;
-    padding: 6rem;
+    background-color: #1d1d1d;
+    padding: 4rem 6rem 2rem 6rem;
     color: #fff;
     display: flex;
-    align-items: center;
-    gap: 5rem;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 2rem;
+
+    &__group{
+        display: flex;
+        align-items: center;
+        gap: 5rem;
+    }
 
     &__icons{
         display: flex;
@@ -20,6 +29,7 @@
         align-items: center;
         color: #2c2c2c;
         border-radius: 0.5rem;
+        cursor: pointer;
     }
 
     &__col{
@@ -30,7 +40,11 @@
         }
 
         &:first-child{
-            width: 38rem;
+            width: 35rem;
+        }
+
+        &:last-child{
+            width: min(30rem, 100%);
         }
 
         &__list{
@@ -42,6 +56,28 @@
                 color: #fff;
                 font-size: 0.85rem;
             }
+        }
+
+        &__input{
+            padding: 0.5rem 1rem;
+            background-color: rgba(255, 255, 255, 0.2);
+            border: 1px solid transparent;
+            color: $color-white;
+            border-radius: 0.2rem;
+
+            &::placeholder{
+                color: $color-white;
+                opacity: 0.5;
+            }
+
+            &:focus{
+                outline: 1px solid $color-white;
+            }
+        }
+
+        &__btn{
+            padding: 0.5rem 1rem;
+            text-transform: capitalize;
         }
     }
 }

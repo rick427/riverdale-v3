@@ -1,7 +1,7 @@
+import { NavLink, useParams } from 'react-router-dom';
 import { Fade as Hamburger } from 'hamburger-react';
 import { Heading, Text } from '@radix-ui/themes';
 import { useState, useEffect } from 'react';
-import { NavLink } from 'react-router-dom';
 import { HiPhone } from "react-icons/hi2";
 
 import styles from './header.module.scss';
@@ -9,6 +9,8 @@ import styles from './header.module.scss';
 export default function Header() {
     const [isOpen, setIsOpen] = useState<boolean>(false);
     const [scrollPosition, setScrollPosition] = useState<number>(window.scrollY);
+
+    const params = useParams();
 
     const handleScroll = () => {
         const position = window.scrollY;
@@ -26,7 +28,7 @@ export default function Header() {
         return isActive ? styles.isActive : "";
     }
 
-    const headerClassNames = scrollPosition > 50 ? `${styles.header} ${styles.sticky}` : styles.header;
+    const headerClassNames = (scrollPosition > 50 || !!params.slug) ? `${styles.header} ${styles.sticky}` : styles.header;
 
     return (
         <header className={headerClassNames}>
@@ -63,11 +65,11 @@ export default function Header() {
                 </li>
                 <li className={styles.header__list__item}>
                     <HiPhone size={16} />
-                    <NavLink to="/">
+                    <a href="https://wa.me/254705986417" target="_blank" rel="noreferrer">
                         <Text as="span" size="2" weight="medium">
                             +254 791 786 110
                         </Text>
-                    </NavLink>
+                    </a>
                 </li>
             </ul>
 

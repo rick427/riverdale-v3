@@ -11,3 +11,11 @@ $media-sm: 48em;
 $media-md: 62em;
 $media-lg: 75em;
 $media-xl: 88em;
+
+@mixin clamp-text($number-of-lines){
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-line-clamp: $number-of-lines; 
+    line-clamp: 2; 
+    -webkit-box-orient: vertical;
+}

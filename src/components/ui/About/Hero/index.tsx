@@ -10,7 +10,7 @@ export default function Hero() {
                 Get To Know Our Talented Team
             </Text>
             <Heading as="h1" size="9" weight="medium">
-                About Riverdale Properties
+                Behind the Scenes
             </Heading>
         </section>
     )

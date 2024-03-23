@@ -14,9 +14,11 @@
     &__box{
         display: flex;
         flex-direction: column;
-        gap: 1.5rem;
+        gap: 1rem;
         padding: 2rem;
         border-radius: 0.3rem;
+        width: min(65rem, 100%);
+        margin: 0 auto;
         background-color: rgba(177, 157, 118, 0.05);
 
         &__input{

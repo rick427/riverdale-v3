@@ -10,16 +10,38 @@ import "./styles/main.scss";
 //@: Pages
 import Home from './pages/Home';
 import About from "./pages/About";
+import Blogs from './pages/Blogs';
+import Property from './pages/Property';
+import NotFound from './pages/NotFound';
+import Properties from './pages/Properties';
 
 const router = createBrowserRouter([
   {
     index: true,
     path: "/",
     element: <Home/>,
+    errorElement: <NotFound/>
   },
   {
     path: "/about",
     element: <About/>,
+  },
+  {
+    path: "/property",
+    children: [
+      {
+        index: true,
+        element: <Properties/>,
+      },
+      {
+        path: ":slug",
+        element: <Property/>
+      }
+    ]
+  },
+  {
+    path: "/blogs",
+    element: <Blogs/>,
   },
 ]);
 

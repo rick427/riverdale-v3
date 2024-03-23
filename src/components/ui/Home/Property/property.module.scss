@@ -1,7 +1,7 @@
 @import "@/styles/variables.scss";
 
 .property{
-    padding: 4rem 6rem;
+    padding: 4rem 6rem 6rem 6rem;
     display: flex;
     flex-direction: column;
     gap: 4rem;
@@ -42,7 +42,7 @@
         margin-bottom: 0.5rem;
         position: relative;
 
-        > img{
+        img{
             width: 100%;
             height: 100%;
             object-fit: cover;

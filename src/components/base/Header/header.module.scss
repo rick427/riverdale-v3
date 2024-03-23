@@ -14,7 +14,7 @@
     color: #fff;
     transition: all 200ms ease;
 
-    @media screen and (max-width: $media-md){
+    @media screen and (max-width: $media-lg){
         padding: 1rem 4rem;
     }
 
@@ -59,24 +59,44 @@
     a{
         color: #313131;
     }
+
+    .isActive{
+        position: relative;
+    
+        > span{
+            color: $color-primary-dark;
+            font-weight: 600;
+        }
+    
+        &:before{
+            content: "";
+            position: absolute;
+            top: 55%;
+            transform: translateY(-55%);
+            left: -1.6rem;
+            width: 1.2rem;
+            height: 0.8px;
+            background-color: $color-primary-dark;
+        }
+    }
 }
 
 .isActive{
     position: relative;
 
     > span{
-        color: $color-primary-dark;
+        color: $color-white;
         font-weight: 600;
     }
 
     &:before{
         content: "";
         position: absolute;
-        top: 50%;
-        transform: translateY(-50%);
-        left: -1.5rem;
+        top: 55%;
+        transform: translateY(-55%);
+        left: -1.6rem;
         width: 1.2rem;
-        height: 0.5px;
-        background-color: $color-primary-dark;
+        height: 0.8px;
+        background-color: $color-white;
     }
 }
