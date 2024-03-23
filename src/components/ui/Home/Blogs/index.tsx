@@ -1,4 +1,4 @@
-import { Heading, Text, Flex, Grid } from "@radix-ui/themes";
+import { Heading, Text, Box, Flex, Grid } from "@radix-ui/themes";
 
 //@: Styles
 import styles from "./blogs.module.scss";
@@ -73,11 +73,14 @@ export default function Blogs() {
                         <div key={blog._id} className={styles.blogs__card}>
                             <img src={blog.image} alt="blog" />
 
-                            <Flex direction="column" gap="2">
-                                <Text as="span" size="2" weight="bold">{blog.date}</Text>
-                                <Heading as="h4" size="5">{blog.title}</Heading>
-                                <Text as="p" size="2" color="gray">{blog.description}</Text>
-                            </Flex>
+                            <Box style={{flex: 1}}>
+                                <Flex direction="column" gap="2">
+                                    <Text as="span" size="2" weight="bold">{blog.date}</Text>
+                                    <Heading as="h4" size="5">{blog.title}</Heading>
+                                    <Text as="p" size="2" color="gray">{blog.description}</Text>
+                                </Flex>
+                            </Box>
+                            
                         </div>
                     ))}
                 </Flex>

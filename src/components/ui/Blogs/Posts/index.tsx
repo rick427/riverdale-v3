@@ -71,7 +71,7 @@ export default function Posts() {
 
             <Grid columns={{initial: "3"}} gap="8">
                 {blogPosts.map(item => (
-                    <BlogCard item={item} />
+                    <BlogCard key={item._id} item={item} />
                 ))}
             </Grid>
         </section>

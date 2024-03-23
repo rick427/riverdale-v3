@@ -100,7 +100,7 @@ export default function Footer() {
                 </div>
             </div>
 
-            <Flex justify="between" align="center">
+            <Flex justify="center" align="center">
                 <Text size="2">
                     {new Date().getFullYear()} &copy; Copyright. All Rights Reserved
                 </Text>
