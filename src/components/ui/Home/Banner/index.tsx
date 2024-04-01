@@ -1,4 +1,5 @@
 import { Heading, Text } from "@radix-ui/themes";
+import { Link } from "react-router-dom";
 
 import styles from "./cta.module.scss";
 
@@ -13,9 +14,9 @@ export default function CallToAction() {
                     Are you selling your home?
                 </Heading>
 
-                <button className={styles.cta__col__btn}>
+                <Link to="/contact" className={styles.cta__col__btn}>
                     get estimation
-                </button>
+                </Link>
             </div>
 
             <div className={styles.cta__col}>
@@ -26,9 +27,9 @@ export default function CallToAction() {
                     Are you looking to buy a home?
                 </Heading>
 
-                <button className={styles.cta__col__btn}>
+                <Link to="/property" className={styles.cta__col__btn}>
                     search listings
-                </button>
+                </Link>
             </div>
         </section>
     )

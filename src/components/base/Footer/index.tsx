@@ -91,9 +91,9 @@ export default function Footer() {
                         <Flex direction="column" gap="5">
                             <Text size="2">
                                 Sign up for our newsletter to get latest 
-                                updates and offers via your email.
+                                updates and offers.
                             </Text>
-                            <input placeholder="Email" className={styles.footer__col__input} />
+                            <input placeholder="Your email address" className={styles.footer__col__input} />
                             <button className={styles.footer__col__btn}>subscribe</button>
                         </Flex>
                     </Flex>

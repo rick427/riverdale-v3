@@ -1,0 +1,68 @@
+@import "@/styles/variables.scss";
+
+.contact{
+    padding: 8rem 12rem;
+    position: relative;
+    min-height: 100vh;
+
+    &:before{
+        content: "";
+        position: absolute;
+        width: 75%;
+        height: 100%;
+        background-color: $color-primary-light;
+        z-index: -1;
+        top: 0;
+        right: 0;
+    }
+
+    &__img{
+        width: 40rem;
+        height: 45rem;
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        left: 6rem;
+        border-radius: 0.8rem;
+        object-fit: cover;
+    }
+
+    &__form{
+        width: min(40rem, 100%);
+        padding: 3rem;
+        padding-left: 7rem;
+        margin-left: auto;
+        display: flex;
+        flex-direction: column;
+        gap: 2rem;
+        border-radius: 0.8rem;
+        box-shadow: 0px 5px 30px 0px rgba(0, 0, 0, 0.07);
+        background-color: $color-white;
+
+        &__input{
+            padding: 1rem 0.5rem;
+            height: 3rem;
+        }
+
+        &__btn{
+            display: block;
+            width: 100%;
+            padding: 1rem;
+            font-size: 0.85rem;
+            font-weight: 500;
+            text-transform: uppercase;
+            background-color: $color-primary;
+            border: 1px solid transparent;
+            border-radius: 0.3rem;
+            color: #fff;
+            cursor: pointer;
+            transition: all 200ms ease;
+
+            &:hover{
+                background-color: $color-primary-dark;
+                color: $color-white;
+                border: 1px solid $color-primary;
+            }
+        }
+    }
+}

@@ -23,7 +23,7 @@ export default function ListingCard({item}:ListingCardProps) {
                                 {`${item.currency} ${item.price?.toLocaleString()}`}
                             </Text>
                         </Box>
-                        <Box className={styles.card__image__badge}>
+                        <Box className={styles.card__image__badge} style={{backgroundColor: item.status === "SALE" ? "#d22d3e" : ""}}>
                             For {item.status}
                         </Box>
                     </Box>

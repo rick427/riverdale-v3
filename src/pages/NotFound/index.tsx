@@ -46,7 +46,7 @@ export default function NotFound() {
 
                     <Link to="/" className={styles.error__link}>
                         <RiSendPlaneLine size={18} />
-                        Ignore Cat-astrophy
+                        Leave the Cat
                     </Link>
                 </Flex>
             </Box>

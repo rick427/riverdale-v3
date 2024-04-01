@@ -1,3 +1,5 @@
+@import "@/styles/variables.scss";
+
 .card{
     display: flex;
     flex-direction: column;
@@ -13,6 +15,7 @@
             width: 100%;
             height: 100%;
             object-fit: cover;
+            border-radius: 0.3rem;
         }
 
         &__price{
@@ -22,18 +25,20 @@
             background-color: rgba(0,0,0,0.6);
             color: #fff;
             padding: 0.5rem 1rem;
+            border-radius: 0.2rem;
         }
 
         &__badge{
             position: absolute;
             top: 1rem;
             right: 1rem;
-            font-size: 0.8rem;
+            font-size: 0.7rem;
             font-weight: 600;
             text-transform: uppercase;
-            background-color: rgba(189, 167, 110, 0.95);
-            color: #fff;
-            padding: 0.5rem 1rem;
+            background-color: $color-green;
+            color: $color-white;
+            border-radius: 0.2rem;
+            padding: 0.2rem 0.8rem;
         }
     }
 }

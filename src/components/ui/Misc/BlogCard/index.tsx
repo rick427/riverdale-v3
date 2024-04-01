@@ -10,7 +10,7 @@ interface BlogCardProps {
 
 export default function BlogCard({item}:BlogCardProps) {
     return (
-        <Card size="1">
+        <Card size="2">
             <Box className={styles.card}>
                 <img className={styles.card__img} src={item.imageUrl} alt="blog" />
                 <Flex direction="column" gap="3">
