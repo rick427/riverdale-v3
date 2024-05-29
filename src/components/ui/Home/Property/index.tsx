@@ -18,10 +18,10 @@ export default function Property() {
                         Most Recent Properties
                     </Heading>
                     <Text as="p" align="center">
-                        These properties contain exclusive real estate 
-                        opportunities within the city. We have lots of 
-                        properties to choose from, take your time and 
-                        explore.
+                        Discover some of our latest residential and commercial listings
+                        for sale offering a variety of features and yields depending on what 
+                        you're looking for. We've got ideal investment opportunities, a place to
+                        call home or your future office.
                     </Text>
                 </Flex>
             </div>

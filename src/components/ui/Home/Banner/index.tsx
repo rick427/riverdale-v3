@@ -11,11 +11,11 @@ export default function CallToAction() {
                     For Sellers
                 </Text>
                 <Heading as="h1" size="8" weight="medium">
-                    Are you selling your home?
+                    Are your looking to sell?
                 </Heading>
 
                 <Link to="/contact" className={styles.cta__col__btn}>
-                    get estimation
+                    Contact us
                 </Link>
             </div>
 
@@ -24,7 +24,7 @@ export default function CallToAction() {
                     For Buyers
                 </Text>
                 <Heading as="h1" size="8" weight="medium">
-                    Are you looking to buy a home?
+                    Ready to buy or rent ?
                 </Heading>
 
                 <Link to="/property" className={styles.cta__col__btn}>

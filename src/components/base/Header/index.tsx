@@ -1,10 +1,12 @@
 import { NavLink, useParams } from 'react-router-dom';
 import { Fade as Hamburger } from 'hamburger-react';
-import { Heading, Text } from '@radix-ui/themes';
 import { useState, useEffect } from 'react';
-import { HiPhone } from "react-icons/hi2";
+import { FaWhatsapp } from "react-icons/fa";
+import { Text } from '@radix-ui/themes';
 
 import styles from './header.module.scss';
+
+import logoImg from "@/assets/logo-2.png";
 
 export default function Header() {
     const [isOpen, setIsOpen] = useState<boolean>(false);
@@ -50,12 +52,13 @@ export default function Header() {
                 </li>
                 <li className={styles.header__list__item}>
                     <NavLink to="/blogs" className={({isActive}) => activeNavLink(isActive)}>
-                        <Text as="span" size="2" weight="medium">Blogs</Text>
+                        <Text as="span" size="2" weight="medium">Blog</Text>
                     </NavLink>
                 </li>
             </ul>
 
-            <Heading as="h2" size="7">Riverdale.</Heading>
+            {/* <Heading as="h2" size="7">Riverdale.</Heading> */}
+            <img src={logoImg} alt="logo" className={styles.header__logo} />
 
             <ul className={styles.header__list}>
                 <li className={styles.header__list__item}>
@@ -64,7 +67,7 @@ export default function Header() {
                     </NavLink>
                 </li>
                 <li className={styles.header__list__item}>
-                    <HiPhone size={16} />
+                    <FaWhatsapp size={16} />
                     <a href="https://wa.me/254705986417" target="_blank" rel="noreferrer">
                         <Text as="span" size="2" weight="medium">
                             +254 791 786 110

@@ -1,9 +1,11 @@
-import { Heading, Text, Flex, Box } from "@radix-ui/themes";
 import { FaFacebookF, FaInstagram, FaLinkedin } from "react-icons/fa";
+import { Text, Flex, Box } from "@radix-ui/themes";
 import { FaXTwitter } from "react-icons/fa6";
 import { Link } from "react-router-dom";
 
 import styles from "./footer.module.scss";
+
+import logoImg from "@/assets/logo.png";
 
 export default function Footer() {
     return (
@@ -11,7 +13,7 @@ export default function Footer() {
             <div className={styles.footer__group}>
                 <div className={styles.footer__col}>
                     <Flex direction="column" gap="5">
-                        <Heading as="h1" size="7">Riverdale.</Heading>
+                        <img src={logoImg} alt="logo" className={styles.footer__col__logo} />
                         <Text as="p" size="2">
                             We are committed to providing the most personalized real estate 
                             services from listing to close. We have exceptional results 
@@ -85,7 +87,7 @@ export default function Footer() {
                         </ul>
                     </Flex>
                 </div>
-                <div className={styles.footer__col}>
+                {/* <div className={styles.footer__col}>
                     <Flex direction="column" gap="4">
                         <Text as="p" weight="bold">Newsletter</Text>
                         <Flex direction="column" gap="5">
@@ -97,14 +99,14 @@ export default function Footer() {
                             <button className={styles.footer__col__btn}>subscribe</button>
                         </Flex>
                     </Flex>
-                </div>
+                </div> */}
             </div>
 
-            <Flex justify="center" align="center">
+            {/* <Flex justify="center" align="center">
                 <Text size="2">
                     {new Date().getFullYear()} &copy; Copyright. All Rights Reserved
                 </Text>
-            </Flex>
+            </Flex> */}
         </footer>
     )
 }

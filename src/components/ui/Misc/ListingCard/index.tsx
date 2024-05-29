@@ -41,9 +41,9 @@ export default function ListingCard({item}:ListingCardProps) {
                         </Text>
                     </Flex>
 
-                    <Text as="p" size="2" color="gray">
+                    {/* <Text as="p" size="2" color="gray">
                         {item.description}
-                    </Text>
+                    </Text> */}
                 </Flex>
 
                 <Grid columns={{initial: "2"}} gap="3">

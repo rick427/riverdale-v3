@@ -20,17 +20,17 @@ export default function Search() {
                 <Grid columns={{initial: "3"}} gap="5">
                     <TextFieldInput 
                         color="bronze"
-                        placeholder="Enter a state, city or area" 
+                        placeholder="Property Type" 
                         className={styles.search__box__input}
                     />
                     <TextFieldInput 
                         color="bronze"
-                        placeholder="Categories" 
+                        placeholder="Property Category" 
                         className={styles.search__box__input}
                     />
                     <TextFieldInput 
                         color="bronze"
-                        placeholder="Property Status" 
+                        placeholder="Location" 
                         className={styles.search__box__input}
                     />
                 </Grid>

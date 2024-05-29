@@ -49,9 +49,9 @@ export default function Blogs() {
                         Our Blogs
                     </Heading>
                     <Text as="p" align="center">
-                        Welcome to our blog, your ultimate stop for real estate 
-                        and more! Explore with us as we uncover the secrets to 
-                        your dream home. There's something for everyone here!
+                        Browse through our range of articles covering real
+                        estate buying tips all through to maximising on your investment.
+                        There's something for everyone here.
                     </Text>
                 </Flex>
             </div>
