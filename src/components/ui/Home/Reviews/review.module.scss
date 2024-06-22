@@ -4,7 +4,7 @@
     padding: 6rem;
     //margin-bottom: 10rem;
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     gap: 3rem;
     //min-height: 55vh;
     //position: relative;
@@ -13,17 +13,16 @@
     &__header{
         width: min(35rem, 100%);
         margin: 0 auto;
-        color: $color-white;
     }
 
     &__card{
-        flex: 1;
         //position: absolute;
         //bottom: -9rem;
         //left: 50%;
         //transform: translateX(-50%);
         //display: flex;
         //width: min(50rem, 100%);
+        min-height: 13rem;
         border-radius: 0.5rem;
         //overflow: hidden;
         border: 1px solid #e7e7e7;

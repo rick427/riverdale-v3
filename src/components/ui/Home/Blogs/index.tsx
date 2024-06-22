@@ -46,7 +46,7 @@ export default function Blogs() {
             <div className={styles.blogs__header}>
                 <Flex direction="column" align="center" gap="3">
                     <Heading as="h1" size="8" align="center">
-                        Our Blogs
+                        Our Blog
                     </Heading>
                     <Text as="p" align="center">
                         Browse through our range of articles covering real
@@ -85,6 +85,12 @@ export default function Blogs() {
                     ))}
                 </Flex>
             </Grid>
+
+            <Flex justify="center">
+                <button className={styles.blogs__btn}>
+                    Read More Blogs
+                </button>
+            </Flex>
         </section>
     )
 }

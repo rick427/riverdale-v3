@@ -1,5 +1,5 @@
 import styles from "./search.module.scss";
-import { Heading, Text, Grid, Flex, Box, TextFieldInput } from "@radix-ui/themes";
+import { Heading, Text, Grid, Flex, Box, TextFieldInput, Select } from "@radix-ui/themes";
 
 export default function Search() {
     return (
@@ -18,34 +18,42 @@ export default function Search() {
 
             <Box className={styles.search__box}>
                 <Grid columns={{initial: "3"}} gap="5">
-                    <TextFieldInput 
-                        color="bronze"
-                        placeholder="Property Type" 
-                        className={styles.search__box__input}
-                    />
-                    <TextFieldInput 
-                        color="bronze"
-                        placeholder="Property Category" 
-                        className={styles.search__box__input}
-                    />
-                    <TextFieldInput 
-                        color="bronze"
-                        placeholder="Location" 
-                        className={styles.search__box__input}
-                    />
+                    <Select.Root size="3" defaultValue="RENTAL">
+                        <Select.Trigger className={styles.search__box__select} />
+                        <Select.Content>
+                            <Select.Item value="RENTAL">Sale</Select.Item>
+                            <Select.Item value="SALE">Rentals</Select.Item>
+                        </Select.Content>
+                    </Select.Root>
+
+                    <Select.Root size="3" defaultValue="RESIDENTIAL">
+                        <Select.Trigger className={styles.search__box__select} />
+                        <Select.Content>
+                            <Select.Item value="RESIDENTIAL">Residential</Select.Item>
+                            <Select.Item value="COMMERCIAL">Commercial</Select.Item>
+                        </Select.Content>
+                    </Select.Root>
+
+                    <Select.Root size="3" defaultValue="WESTLANDS">
+                        <Select.Trigger className={styles.search__box__select} />
+                        <Select.Content>
+                            <Select.Item value="WESTLANDS">Westlands</Select.Item>
+                            <Select.Item value="MUTHIAGA">Muthiaga</Select.Item>
+                        </Select.Content>
+                    </Select.Root>
                 </Grid>
 
-                <Grid columns={{initial: "4"}} gap="5">
+                <Grid columns={{initial: "3"}} gap="5">
                     <TextFieldInput 
                         color="bronze"
                         placeholder="Beds | Baths" 
                         className={styles.search__box__input}
                     />
-                    <TextFieldInput 
+                    {/* <TextFieldInput 
                         color="bronze"
                         placeholder="MLS #" 
                         className={styles.search__box__input}
-                    />
+                    /> */}
                     <TextFieldInput 
                         color="bronze"  
                         placeholder="Price" 

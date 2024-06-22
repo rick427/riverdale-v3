@@ -1,6 +1,6 @@
-import { FaFacebookF, FaInstagram, FaLinkedin } from "react-icons/fa";
+import { FaFacebookF, FaInstagram } from "react-icons/fa";
 import { Text, Flex, Box } from "@radix-ui/themes";
-import { FaXTwitter } from "react-icons/fa6";
+//import { FaXTwitter } from "react-icons/fa6";
 import { Link } from "react-router-dom";
 
 import styles from "./footer.module.scss";
@@ -28,12 +28,12 @@ export default function Footer() {
                             <a className={styles.footer__icon} href="https://www.instagram.com/riverdaleproperties/" target="_blank" rel="noreferrer">
                                 <FaInstagram size={16} />
                             </a>
-                            <a className={styles.footer__icon} href="https://www.instagram.com/riverdaleproperties/" target="_blank" rel="noreferrer">
+                            {/* <a className={styles.footer__icon} href="https://www.instagram.com/riverdaleproperties/" target="_blank" rel="noreferrer">
                                 <FaLinkedin size={16} />
                             </a>
                             <a className={styles.footer__icon} href="https://twitter.com/riverdalepltd" target="_blank" rel="noreferrer">
                                 <FaXTwitter size={16} />
-                            </a>
+                            </a> */}
                         </Box>
                     </Flex>
                 </div>
@@ -51,38 +51,35 @@ export default function Footer() {
                                 <Link to="contact">Contact</Link>
                             </li>
                             <li>
-                                <Link to="contact">Blogs</Link>
-                            </li>
-                            <li>
                                 <Link to="contact">Privacy Policy</Link>
                             </li>
                             <li>
                                 <Link to="contact">Terms & Conditions</Link>
+                            </li>
+                            <li>
+                                <Link to="contact">Subscribe to our newsletter</Link>
                             </li>
                         </ul>
                     </Flex>
                 </div>
                 <div className={styles.footer__col}>
                     <Flex direction="column" gap="4">
-                        <Text as="p" weight="bold">Listings</Text>
+                        <Text as="p" weight="bold">Contact Us</Text>
                         <ul className={styles.footer__col__list}>
                             <li>
-                                <Link to="about">Muthiaga (4)</Link>
+                                <Text as="p" size="2">
+                                    Address: Brookside Drive
+                                </Text>
                             </li>
                             <li>
-                                <Link to="contact">Kisumu (3)</Link>
+                                <Text as="p" size="2">
+                                    Phone Number: +254 791 786 110
+                                </Text>
                             </li>
                             <li>
-                                <Link to="contact">Westlands (3)</Link>
-                            </li>
-                            <li>
-                                <Link to="contact">Mombasa - Diana (2)</Link>
-                            </li>
-                            <li>
-                                <Link to="contact">Kiambu (1)</Link>
-                            </li>
-                            <li>
-                                <Link to="contact">Kilimani (5)</Link>
+                                <Text as="p" size="2">
+                                    Email: info@riverdalep.com
+                                </Text>
                             </li>
                         </ul>
                     </Flex>
