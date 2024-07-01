@@ -1,7 +1,12 @@
+import { useState } from "react";
 import styles from "./search.module.scss";
-import { Heading, Text, Grid, Flex, Box, TextFieldInput, Select } from "@radix-ui/themes";
+import { Heading, Text, Grid, Flex, Box, Select } from "@radix-ui/themes";
 
 export default function Search() {
+    const [category, setCategory] = useState<string>("");
+
+    console.log(category)
+
     return (
         <section className={styles.search}>
             <div className={styles.search__header}>
@@ -18,51 +23,66 @@ export default function Search() {
 
             <Box className={styles.search__box}>
                 <Grid columns={{initial: "3"}} gap="5">
-                    <Select.Root size="3" defaultValue="RENTAL">
-                        <Select.Trigger className={styles.search__box__select} />
+                    <Select.Root size="3" defaultValue="">
+                        <Select.Trigger className={styles.search__box__select} placeholder="Type" />
                         <Select.Content>
                             <Select.Item value="RENTAL">Sale</Select.Item>
                             <Select.Item value="SALE">Rentals</Select.Item>
                         </Select.Content>
                     </Select.Root>
 
-                    <Select.Root size="3" defaultValue="RESIDENTIAL">
-                        <Select.Trigger className={styles.search__box__select} />
+                    <Select.Root size="3" defaultValue="" value={category} onValueChange={(value) => setCategory(value)}>
+                        <Select.Trigger className={styles.search__box__select} placeholder="Category" />
                         <Select.Content>
                             <Select.Item value="RESIDENTIAL">Residential</Select.Item>
                             <Select.Item value="COMMERCIAL">Commercial</Select.Item>
                         </Select.Content>
                     </Select.Root>
 
-                    <Select.Root size="3" defaultValue="WESTLANDS">
-                        <Select.Trigger className={styles.search__box__select} />
+                    <Select.Root size="3" defaultValue="" disabled={!category}>
+                        <Select.Trigger className={styles.search__box__select} placeholder="Specification" />
                         <Select.Content>
-                            <Select.Item value="WESTLANDS">Westlands</Select.Item>
-                            <Select.Item value="MUTHIAGA">Muthiaga</Select.Item>
+                            {category === "COMMERCIAL" && (
+                                <Select.Item value="OFFICE">Office</Select.Item>
+                            )}
+                            {category === "RESIDENTIAL" && (
+                                <Select.Item value="TOWNHOUSE">TownHouse</Select.Item>
+                            )}
                         </Select.Content>
                     </Select.Root>
                 </Grid>
 
                 <Grid columns={{initial: "3"}} gap="5">
-                    <TextFieldInput 
-                        color="bronze"
-                        placeholder="Beds | Baths" 
-                        className={styles.search__box__input}
-                    />
-                    {/* <TextFieldInput 
-                        color="bronze"
-                        placeholder="MLS #" 
-                        className={styles.search__box__input}
-                    /> */}
-                    <TextFieldInput 
-                        color="bronze"  
-                        placeholder="Price" 
-                        className={styles.search__box__input}
-                    />
-                    <button className={styles.search__box__btn}>
-                        Search Properties
-                    </button>
+                    <Select.Root size="3" defaultValue="">
+                        <Select.Trigger className={styles.search__box__select} placeholder="Location" />
+                        <Select.Content>
+                            <Select.Item value="WESTLANDS">Westlands</Select.Item>
+                            <Select.Item value="MUTHIAGA">Muthiaga</Select.Item>
+                        </Select.Content>
+                    </Select.Root>
+                    <Select.Root size="3" defaultValue="" disabled={category === "COMMERCIAL"}>
+                        <Select.Trigger className={styles.search__box__select} placeholder="Baths" />
+                        <Select.Content>
+                            <Select.Item value="1">1</Select.Item>
+                            <Select.Item value="2">2</Select.Item>
+                            <Select.Item value="3">3</Select.Item>
+                            <Select.Item value="4">4</Select.Item>
+                        </Select.Content>
+                    </Select.Root>
+
+                    <Select.Root size="3" defaultValue="" disabled={category === "COMMERCIAL"}>
+                        <Select.Trigger className={styles.search__box__select} placeholder="Beds" />
+                        <Select.Content>
+                            <Select.Item value="1">1</Select.Item>
+                            <Select.Item value="2">2</Select.Item>
+                            <Select.Item value="3">3</Select.Item>
+                            <Select.Item value="4">4</Select.Item>
+                        </Select.Content>
+                    </Select.Root>
                 </Grid>
+                <button className={styles.search__box__btn}>
+                    Search Properties
+                </button>
             </Box>
         </section>
     )

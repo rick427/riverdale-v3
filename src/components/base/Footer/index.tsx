@@ -50,15 +50,6 @@ export default function Footer() {
                             <li>
                                 <Link to="contact">Contact</Link>
                             </li>
-                            <li>
-                                <Link to="contact">Privacy Policy</Link>
-                            </li>
-                            <li>
-                                <Link to="contact">Terms & Conditions</Link>
-                            </li>
-                            <li>
-                                <Link to="contact">Subscribe to our newsletter</Link>
-                            </li>
                         </ul>
                     </Flex>
                 </div>
@@ -73,7 +64,7 @@ export default function Footer() {
                             </li>
                             <li>
                                 <Text as="p" size="2">
-                                    Phone Number: +254 791 786 110
+                                    Phone: +254 791 786 110
                                 </Text>
                             </li>
                             <li>
@@ -84,19 +75,15 @@ export default function Footer() {
                         </ul>
                     </Flex>
                 </div>
-                {/* <div className={styles.footer__col}>
+                <div className={styles.footer__col}>
                     <Flex direction="column" gap="4">
                         <Text as="p" weight="bold">Newsletter</Text>
                         <Flex direction="column" gap="5">
-                            <Text size="2">
-                                Sign up for our newsletter to get latest 
-                                updates and offers.
-                            </Text>
                             <input placeholder="Your email address" className={styles.footer__col__input} />
                             <button className={styles.footer__col__btn}>subscribe</button>
                         </Flex>
                     </Flex>
-                </div> */}
+                </div>
             </div>
 
             {/* <Flex justify="center" align="center">

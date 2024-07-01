@@ -5,6 +5,8 @@ import { createBrowserRouter, RouterProvider } from 'react-router-dom';
 
 //@: Styles
 import '@radix-ui/themes/styles.css';
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
 import "./styles/main.scss";
 
 //@: Pages

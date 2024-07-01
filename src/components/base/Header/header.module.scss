@@ -37,6 +37,14 @@
             display: flex;
             align-items: center;
             gap: 0.5rem;
+            position: relative;
+
+            &:hover{
+                .dropdown{
+                    opacity: 1;
+                    visibility: visible;
+                }
+            }
         }
         
         a{
@@ -109,5 +117,29 @@
         width: 1.2rem;
         height: 0.8px;
         background-color: $color-white;
+    }
+}
+
+.dropdown{
+   position: absolute;
+   bottom: -2rem;
+   left: 0;
+   background-color: white; 
+   width: 8rem;
+   display: flex;
+   flex-direction: column;
+   gap: 0.5rem;
+   padding: 0.5rem;
+   opacity: 0;
+   visibility: hidden;
+
+    a {
+        color: $color-dark;
+        font-size: 0.9rem;
+        font-weight: 500;
+
+        &:hover{
+            color: $color-primary;
+        }
     }
 }

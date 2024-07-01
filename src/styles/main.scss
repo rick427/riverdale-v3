@@ -32,3 +32,7 @@ ul{
 .slick-list {
     margin: 0 -0.3rem;
 }
+
+.slick-prev:before,.slick-next:before {
+    color: #a48a47;
+  }

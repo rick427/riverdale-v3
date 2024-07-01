@@ -1,4 +1,4 @@
-import HeroSlider, {Overlay, Slide, MenuNav} from "hero-slider";
+import HeroSlider, {Overlay, Slide} from "hero-slider";
 import { Heading, Text } from "@radix-ui/themes";
 import { useState } from "react";
 
@@ -91,7 +91,7 @@ export default function Hero() {
                 />
             ))}
             
-            <MenuNav />
+            {/* <MenuNav /> */}
         </HeroSlider>
     )
 }

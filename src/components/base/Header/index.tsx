@@ -1,4 +1,4 @@
-import { NavLink, useParams } from 'react-router-dom';
+import { NavLink, Link, useParams } from 'react-router-dom';
 import { Fade as Hamburger } from 'hamburger-react';
 import { useState, useEffect } from 'react';
 import { FaWhatsapp } from "react-icons/fa";
@@ -41,13 +41,17 @@ export default function Header() {
                     </NavLink>
                 </li>
                 <li className={styles.header__list__item}>
-                    <NavLink to="/about" className={({isActive}) => activeNavLink(isActive)}>
-                        <Text as="span" size="2" weight="medium">About</Text>
-                    </NavLink>
-                </li>
-                <li className={styles.header__list__item}>
                     <NavLink to="/property" className={({isActive}) => activeNavLink(isActive)}>
                         <Text as="span" size="2" weight="medium">Property</Text>
+                    </NavLink>
+                    <div className={styles.dropdown} style={{bottom: "-4rem"}}>
+                        <Link to="/property">For Sale</Link>
+                        <Link to="/property">For Rent</Link>
+                    </div>
+                </li>
+                <li className={styles.header__list__item}>
+                    <NavLink to="/about" className={({isActive}) => activeNavLink(isActive)}>
+                        <Text as="span" size="2" weight="medium">About</Text>
                     </NavLink>
                 </li>
                 <li className={styles.header__list__item}>
@@ -65,9 +69,12 @@ export default function Header() {
                     <NavLink to="/contact" className={({isActive}) => activeNavLink(isActive)}>
                         <Text as="span" size="2" weight="medium">Contact Us</Text>
                     </NavLink>
+                    <div className={styles.dropdown}>
+                        <Link to="/contact">FAQ's</Link>
+                    </div>
                 </li>
                 <li className={styles.header__list__item}>
-                    <FaWhatsapp size={16} />
+                    <FaWhatsapp size={24} />
                     <a href="https://wa.me/254705986417" target="_blank" rel="noreferrer">
                         <Text as="span" size="2" weight="medium">
                             +254 791 786 110
