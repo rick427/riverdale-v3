@@ -43,10 +43,25 @@ export default function Search() {
                         <Select.Trigger className={styles.search__box__select} placeholder="Specification" />
                         <Select.Content>
                             {category === "COMMERCIAL" && (
-                                <Select.Item value="OFFICE">Office</Select.Item>
+                                <>
+                                    <Select.Item value="OFFICE">Office</Select.Item>
+                                    <Select.Item value="HOUSE">House</Select.Item>
+                                    <Select.Item value="PLOT">Plot</Select.Item>
+                                    <Select.Item value="SHOP">Shop</Select.Item>
+                                    <Select.Item value="SHOWROOM">Snowroom</Select.Item>
+                                    <Select.Item value="WAREHOUSE">Warehouse</Select.Item>
+                                </>
                             )}
                             {category === "RESIDENTIAL" && (
-                                <Select.Item value="TOWNHOUSE">TownHouse</Select.Item>
+                                <>
+                                    <Select.Item value="TOWNHOUSE">TownHouse</Select.Item>
+                                    <Select.Item value="APARTMENT">Apartment</Select.Item>
+                                    <Select.Item value="GUEST_HOUSE">Guest House</Select.Item>
+                                    <Select.Item value="BEDSITTER">Bedsitter</Select.Item>
+                                    <Select.Item value="HOUSE">House</Select.Item>
+                                    <Select.Item value="MAISONETTE">Maisonette</Select.Item>
+                                    <Select.Item value="PENTHOUSE">Penthouse</Select.Item>
+                                </>
                             )}
                         </Select.Content>
                     </Select.Root>
@@ -58,6 +73,10 @@ export default function Search() {
                         <Select.Content>
                             <Select.Item value="WESTLANDS">Westlands</Select.Item>
                             <Select.Item value="MUTHIAGA">Muthiaga</Select.Item>
+                            <Select.Item value="ATHI_RIVER">Athi River</Select.Item>
+                            <Select.Item value="BAMBURI">Bamburi</Select.Item>
+                            <Select.Item value="BROOKSIDE_DRIVE">Brookside Drive</Select.Item>
+                            <Select.Item value="CENTRAL_BUSINESS_DISTRICT">Central Business District</Select.Item>
                         </Select.Content>
                     </Select.Root>
                     <Select.Root size="3" defaultValue="" disabled={category === "COMMERCIAL"}>
