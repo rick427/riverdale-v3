@@ -1,3 +1,19 @@
+@import "../../../../styles/variables.scss";
+
 .listings{
     padding: 6rem;
+
+    &__paginate{
+        width: 2rem;
+        height: 2rem;
+        border: 1px solid $color-primary;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        &:first-child{
+            background-color: $color-primary;
+            color: white;
+        }
+    }
 }

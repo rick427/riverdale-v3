@@ -1,6 +1,7 @@
-import { Heading, Text, Flex, Box, Grid, Checkbox, Separator, TextFieldInput } from "@radix-ui/themes";
+import { Heading, Text, Flex, Box, Grid, Checkbox, Separator, TextArea, TextFieldInput } from "@radix-ui/themes";
 import { PiMapPinFill } from "react-icons/pi";
 import GoogleMapReact from 'google-map-react';
+import { FaWhatsapp } from "react-icons/fa";
 
 //@: Styles
 import styles from "./details.module.scss";
@@ -215,44 +216,55 @@ export default function Details({listing}:DetailsProps) {
                     <form className={styles.dets__col__form} onSubmit={e => e.preventDefault()}>
                         <Heading as="h1">Request Inquiry</Heading>
 
-                        <TextFieldInput 
-                            color="bronze"
-                            variant="surface"
-                            size="3" 
-                            required
-                            placeholder="Full Name" 
-                            className={styles.dets__col__input}
-                        />
+                        <div style={{display: "flex", flexDirection: "column", gap: "0.5rem"}}>
+                            <span style={{fontSize: "0.8rem"}}>Name <span style={{color: "red"}}>*</span></span>
+                            <TextFieldInput 
+                                color="bronze"
+                                variant="surface"
+                                size="3" 
+                                required
+                                placeholder="John Doe" 
+                                className={styles.dets__col__input}
+                            />
+                        </div>
 
-                        <TextFieldInput 
-                            color="bronze"
-                            variant="surface"
-                            size="3" 
-                            required
-                            placeholder="Phone Number" 
-                            className={styles.dets__col__input}
-                        />
+                        <div style={{display: "flex", flexDirection: "column", gap: "0.5rem"}}>
+                            <span style={{fontSize: "0.8rem"}}>Phone Number <span style={{color: "red"}}>*</span></span>
+                            <TextFieldInput 
+                                color="bronze"
+                                variant="surface"
+                                size="3" 
+                                required
+                                placeholder="07xxxxxxxx" 
+                                className={styles.dets__col__input}
+                            />
+                        </div>
 
-                        <TextFieldInput 
-                            color="bronze"
-                            variant="surface"
-                            size="3" 
-                            required
-                            placeholder="Email" 
-                            className={styles.dets__col__input}
-                        />
+                        <div style={{display: "flex", flexDirection: "column", gap: "0.5rem"}}>
+                            <span style={{fontSize: "0.8rem"}}>Email <span style={{color: "red"}}>*</span></span>
+                            <TextFieldInput 
+                                color="bronze"
+                                variant="surface"
+                                size="3" 
+                                required
+                                placeholder="07xxxxxxxx" 
+                                className={styles.dets__col__input}
+                            />
+                        </div>
 
-                        <TextFieldInput 
+                        <TextArea 
                             color="bronze"
                             variant="surface"
-                            size="3" 
                             required
                             placeholder="Message" 
-                            className={styles.dets__col__input}
+                            className={styles.dets__col__textarea}
                         />
 
                         <button type="submit" className={styles.dets__col__btn}>
                             Submit request
+                        </button>
+                        <button type="submit" className={styles.dets__col__btn}>
+                            WhatsApp chat <FaWhatsapp size={18} />
                         </button>
                     </form>
 

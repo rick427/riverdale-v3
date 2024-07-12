@@ -30,9 +30,20 @@
             height: 3rem;
         }
 
+        &__select{
+            height: 3rem;
+
+            &:disabled{
+                background-color: rgb(178, 178, 178);
+            }
+        }
+
         &__btn{
             font-size: 0.85rem;
             font-weight: 500;
+            width: 19.3rem;
+            height: 3rem;
+            margin: 0 auto;
             text-transform: uppercase;
             background-color: $color-primary;
             border: 1px solid transparent;

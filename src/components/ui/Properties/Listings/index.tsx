@@ -22,6 +22,14 @@ export default function Listings() {
                         <ListingCard key={item._id} item={item} />
                     ))}
                 </Grid>
+
+                <Flex mt="8" gap="3">
+                    <div className={styles.listings__paginate}>1</div>
+                    <div className={styles.listings__paginate}>2</div>
+                    <div className={styles.listings__paginate}>3</div>
+                    <div className={styles.listings__paginate}>4</div>
+                    <div className={styles.listings__paginate}>5</div>
+                </Flex>
             </Flex>
         </section>
     )

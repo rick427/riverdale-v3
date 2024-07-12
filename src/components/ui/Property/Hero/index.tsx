@@ -26,6 +26,7 @@ export default function Hero({listing}:HeroProps) {
 
     return (
         <section className={styles.hero}>
+            <img className={styles.hero__banner} src={l_01} alt="" />
             <Slider {...settings}>
                 <img src={listing?.image} alt="listing" />
                 <img src={l_01} alt="" />

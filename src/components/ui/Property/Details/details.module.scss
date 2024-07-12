@@ -61,6 +61,11 @@
             height: 3rem;
         }
 
+        &__textarea{
+            padding: 1rem 0.5rem;
+            height: 8rem;
+        }
+
         &__btn{
             font-size: 0.85rem;
             font-weight: 500;
@@ -72,6 +77,10 @@
             color: #fff;
             cursor: pointer;
             transition: all 200ms ease;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 0.5rem;
 
             &:hover{
                 background-color: $color-primary-dark;

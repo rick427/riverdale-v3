@@ -5,8 +5,6 @@ import { Heading, Text, Grid, Flex, Box, Select } from "@radix-ui/themes";
 export default function Search() {
     const [category, setCategory] = useState<string>("");
 
-    console.log(category)
-
     return (
         <section className={styles.search}>
             <div className={styles.search__header}>
