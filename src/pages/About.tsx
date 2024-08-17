@@ -12,9 +12,9 @@ export default function About() {
         <Layout>
             <Hero/>
             <Founders />
-            <Company />
-            <Teams />
-            <Banner/>
+            {/* <Company /> */}
+            {/* <Teams /> */}
+            {/* <Banner/> */}
         </Layout>
     )
 }

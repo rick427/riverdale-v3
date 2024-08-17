@@ -14,29 +14,43 @@ export default function Founders() {
                 <div className={styles.founders__card}>
                     <Box className={styles.founders__card__content}>
                         <Heading as="h1" size="8">
-                            Meet the Founders
+                            Our Profile
                         </Heading>
                         
                         <Flex direction="column" gap="4">
                             <Text as="p" color="gray">
-                                With over $2 Billion in sales, Our agency is the industry's top 
-                                luxury producer with over 27 years of experience in marketing 
-                                Seattles's most prestigious waterfront properties. 
+                                We are Kenya's #1 Real Estate Agency. We have a diverse experience and portfolio of properties which we sell, rent and manage. 
                             </Text>
                             <Text as="p" color="gray">
-                                Due to our unparalleled results, expertise and dedication, we rank amongst the 
-                                Top 6 agencies in Seattle and our area. She is also and is an elite member to 
-                                Corcoran's Presidents Council. 
+                                We deal in both Residential & Commercial listings from apartments, townhouses all through to plots and office spaces, we deal with it all!
                             </Text>
                             <Text as="p" color="gray">
-                                With her years of experience, impressive property portfolio, celebrity 
-                                clientele, and unparalleled knowledge of the market and pedigree estates, 
-                                Simone estimable business is sophisticated and renowned.
+                                Give us a call today and let us help you find your next dream property. 
+                            </Text>
+                        </Flex>
+
+                        <Heading as="h1" size="8">
+                            Our Vision
+                        </Heading>
+                        
+                        <Flex direction="column" gap="4">
+                            <Text as="p" color="gray">
+                                To be the Real Estate Agency of choice and to provide world class customer support.
+                            </Text>
+                        </Flex>
+
+                        <Heading as="h1" size="8">
+                            Our Mission
+                        </Heading>
+                        
+                        <Flex direction="column" gap="4">
+                            <Text as="p" color="gray">
+                                To help you find the property of choice with the best value for your money.
                             </Text>
                         </Flex>
 
                         <div className={styles.founders__socials}>
-                            <Flex gap="3">
+                            {/* <Flex gap="3">
                                 <Box className={styles.founders__socials__icon}>
                                     <FaFacebookF size={18} />
                                 </Box>
@@ -46,7 +60,7 @@ export default function Founders() {
                                 <Box className={styles.founders__socials__icon}>
                                     <FaLinkedin size={18} />
                                 </Box>
-                            </Flex>
+                            </Flex> */}
                         <Text>Contact Us &rarr;</Text>
                     </div>
                     </Box>
