@@ -1,5 +1,5 @@
 import { Flex, Heading, Text, Box } from "@radix-ui/themes";
-import { FaFacebookF, FaInstagram, FaLinkedin } from "react-icons/fa";
+//import { FaFacebookF, FaInstagram, FaLinkedin } from "react-icons/fa";
 
 //@: Styles
 import styles from "./founders.module.scss";
