@@ -1,4 +1,4 @@
-import { Heading, Grid, Text, Checkbox, Flex, TextFieldInput } from "@radix-ui/themes";
+import { Heading, Grid, Flex, TextFieldInput } from "@radix-ui/themes";
 
 import styles from "./form.module.scss";
 
@@ -11,7 +11,7 @@ export default function Form() {
 
             <div className={styles.contact__form}>
                 <Heading as="h1" size="8">
-                    Get your Home Estimation
+                    We are Here for You
                 </Heading>
                 
                 <form>
@@ -44,34 +44,15 @@ export default function Form() {
                                 className={styles.contact__form__input}
                             />
                         </Grid>
-                        <Grid columns={{initial: "2"}} gap="5">
-                            <TextFieldInput 
-                                color="bronze"
-                                required
-                                placeholder="Country" 
-                                className={styles.contact__form__input}
-                            />
-                            <TextFieldInput 
-                                color="bronze"
-                                required
-                                placeholder="City" 
-                                className={styles.contact__form__input}
-                            />
-                        </Grid>
                         <TextFieldInput 
                             color="bronze"
                             placeholder="Message" 
+                            style={{height: "10rem"}}
                             className={styles.contact__form__input}
                         />
-                        <Text as="label" size="2">
-                            <Flex gap="2">
-                                <Checkbox size="3" />
-                                I consent to having this website store my submitted 
-                                information so they can respond to my inquiry.
-                            </Flex>
-                        </Text>
+                       
                         <button type="submit" className={styles.contact__form__btn}>
-                            Send Email
+                            Send 
                         </button>
                     </Flex>
                 </form>

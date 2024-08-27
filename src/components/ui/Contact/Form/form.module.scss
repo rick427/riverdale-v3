@@ -2,7 +2,9 @@
 
 .contact{
     padding: 8rem 12rem;
-    position: relative;
+    display: flex;
+    align-items: center;
+    gap: 2rem;
     min-height: 100vh;
 
     &:before{
@@ -17,12 +19,8 @@
     }
 
     &__img{
-        width: 40rem;
-        height: 45rem;
-        position: absolute;
-        top: 50%;
-        transform: translateY(-50%);
-        left: 6rem;
+        width: 35rem;
+        height: 40rem;
         border-radius: 0.8rem;
         object-fit: cover;
     }
@@ -30,8 +28,6 @@
     &__form{
         width: min(40rem, 100%);
         padding: 3rem;
-        padding-left: 7rem;
-        margin-left: auto;
         display: flex;
         flex-direction: column;
         gap: 2rem;

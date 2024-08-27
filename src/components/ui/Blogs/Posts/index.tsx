@@ -12,7 +12,7 @@ import blog_06 from "@/assets/blogs/blog-06.webp";
 import BlogCard from "../../Misc/BlogCard";
 
 export type BlogPosts = {
-    _id: number,
+    _id: number;
     imageUrl: string;
     title: string;
     subtitle: string;
@@ -67,7 +67,7 @@ const blogPosts:BlogPosts[] = [
 export default function Posts() {
     return (
         <section className={styles.posts}>
-            <Heading>Blog List</Heading>
+            <Heading>Our Thoughts</Heading>
 
             <Grid columns={{initial: "3"}} gap="8">
                 {blogPosts.map(item => (
