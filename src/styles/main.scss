@@ -36,3 +36,11 @@ ul{
 .slick-prev:before,.slick-next:before {
     color: #a48a47;
   }
+
+  @import '@radix-ui/colors/black-alpha.css';
+@import '@radix-ui/colors/violet.css';
+
+/* reset */
+button {
+  all: unset;
+}

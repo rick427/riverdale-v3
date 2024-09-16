@@ -9,7 +9,7 @@ export default function Hero() {
                 Riverdale Reflections
             </Heading>
             <Text as="p" size="4" weight="medium">
-                Dive Into the World of Real-Estate
+                Into the World of Real-Estate
             </Text>
         </section>
     )
