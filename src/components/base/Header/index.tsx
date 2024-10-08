@@ -70,7 +70,7 @@ export default function Header() {
                         <Text as="span" size="2" weight="medium">Contact Us</Text>
                     </NavLink>
                     <div className={styles.dropdown}>
-                        <Link to="/contact">FAQ's</Link>
+                        <Link to="/contact/faqs">FAQ's</Link>
                     </div>
                 </li>
                 <li className={styles.header__list__item}>

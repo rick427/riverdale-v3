@@ -13,10 +13,12 @@ import "./styles/main.scss";
 import Home from './pages/Home';
 import About from "./pages/About";
 import Blogs from './pages/Blogs';
+import Blog from "./pages/Blog";
 import Contact from './pages/Contact';
 import Property from './pages/Property';
 import NotFound from './pages/NotFound';
 import Properties from './pages/Properties';
+import ContactFaqs from './pages/ContactFaqs';
 
 const router = createBrowserRouter([
   {
@@ -34,8 +36,16 @@ const router = createBrowserRouter([
     element: <Blogs/>,
   },
   {
+    path: "/blog/:slug",
+    element: <Blog/>,
+  },
+  {
     path: "/contact",
     element: <Contact/>,
+  },
+  {
+    path: "/contact/faqs",
+    element: <ContactFaqs/>,
   },
   {
     path: "/property",
